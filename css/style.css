@@ -1,0 +1,314 @@
+html 
+{
+    height: 100%;
+	font-family: QuicksandBook, Gill Sans, Gill Sans MT, sans-serif;
+	font-size: 0.750em;
+	line-height: 1.13;
+	color: #414042;
+}
+
+body
+{
+	height: 100%;
+	margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, left center, right center, from(#FFFFFF), to(#EAE9E7));
+	  
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #FFFFFF, #EAE9E7);
+	  
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #FFFFFF, #EAE9E7);
+	  
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #FFFFFF, #EAE9E7);
+	  
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #FFFFFF, #EAE9E7);
+	overflow: hidden;
+}
+
+a:link
+{
+	color: #414042;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: #414042;
+	text-decoration: none;
+}
+
+a.home-color 
+{
+	color: #B30A58;
+}
+
+a.portfolio-color
+{
+	color: #00A755;
+}
+
+a.about-color
+{
+	color: #FFC400;
+}
+
+a.contact-color
+{
+	color: #00ACE0;
+}
+
+a.codetext
+{
+	font-size: 1.167em;
+	color: #414042;
+}
+
+.icon-label
+{
+	margin-left: 5px;
+}
+
+a.sidelink 
+{
+	color: #414042;
+}
+
+a.sidelink:link 
+{
+	color: #414042;
+}
+
+.fade 
+{
+   opacity: 1;
+   transition: opacity .10s ease-in-out;
+   -moz-transition: opacity .10s ease-in-out;
+   -webkit-transition: opacity .10s ease-in-out;
+   -ms-transition: opacity .10s ease-in-out;
+   cursor: pointer;
+}
+ 
+.fade:hover 
+{
+    opacity: 0.5;
+}
+
+.disappear
+{
+	opacity: 1;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.disappear:hover
+{
+	opacity: 1.0;
+	text-decoration: underline;
+	
+}
+
+#wrapper, #container 
+{
+  	height: 526px;
+  	width: 714px;
+}
+
+#wrapper 
+{
+  	bottom: 50%; right: 50%;
+  	position: absolute;
+	background: transparent;
+}
+
+#container 
+{
+  	top: 50%; left: 50%;
+  	position: relative;
+	background: transparent;
+}
+
+#nav
+{
+	height: 150px;
+	width:150px;
+	position: absolute;
+	top: 376px; left: 0px;
+	font-size: 1.000em;
+	color: #FFFFFF;
+	background: transparent;
+}
+
+.icon
+{
+	height: 19px;
+	position: absolute;
+	font-size: 1.000em;
+	color: #414042;
+	padding: 0px 0px 0px 2px; /* top right bottom left */
+	background: transparent;
+	cursor: pointer;
+}
+
+#grid
+{
+	height: 450px;
+	width: 450px;
+	position: absolute;
+	top: 0px; left: 188px;
+	background: transparent;
+}
+
+.grid-square
+{
+	height: 150px;
+	width: 150px;
+	position: absolute;
+}
+
+.grid-textsquare
+{
+	height: 130px;
+	width: 130px;
+	position: absolute;
+	font-size: 1.000em;
+	color: #EAE9E7;
+	padding: 10px;
+	display: none;
+}
+
+.grid-pixel
+{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	background: #D4D3D1;
+	border: 1px solid #D4D3D1;
+}
+
+.med-rect
+{
+	height: 338px;
+	width: 150px;
+	position: absolute;
+	background: #D4D3D1;
+}
+
+.lrg-rect
+{
+	height: 526px;
+	width: 150px;
+	position: absolute;
+	background: #D4D3D1;
+}
+
+.side-med-rect
+{
+	height: 150px;
+	width: 338px;
+	position: absolute;
+	background: #D4D3D1;
+}
+
+.about-text 
+{
+	width: 150px;
+	position: absolute;
+	background: transparent;
+	text-align: left;
+	font-size: 1.000em;
+}
+
+#content
+{
+	height: 526px;
+	width: 150px;
+	position: absolute;
+	top: 0px; left: 0px;
+	background: transparent;
+}
+
+.title
+{
+	height: 150px;
+	width: 152px;
+	position: absolute;
+	top: 0px; left: 0px;
+	font-size: 2.500em;
+	line-height: 0.9;
+	font-weight: normal;
+	padding: 0; /* top right bottom left */
+	background: transparent;
+}
+
+.side-text
+{
+	height: 338px;
+	width: 150px;
+	position: absolute;
+	top: 188px; left: 0px;
+	font-size: 1.000em;
+	text-align: left;
+	background: transparent;
+}
+
+#portfolio-content
+{
+}
+
+.code-thumb
+{
+	position: relative !important;
+	font-size: 1.333em;
+	color: #00A755;
+	text-align: right;
+	vertical-align: bottom;
+	display: table-cell;
+	background-color: #FFF;
+}
+
+.button
+{
+    height: 20px;
+    width: 150px;
+	font-weight: bold;
+	color: #FFF !important;
+    background-color: #00a755;
+    padding: 5px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.button:hover
+{
+	background-color: #008944;
+}
+
+.button.a:link
+{
+	color: #FFF !important;
+}
+
+.button.a:visited
+{
+	color: #FFF !important;
+}
+
+#contact-text4 a:link
+{
+	color: #FFF !important;
+}
+
+#contact-text4 a:visited
+{
+	color: #FFF !important;
+}
+
+
+
