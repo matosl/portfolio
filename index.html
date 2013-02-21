@@ -1,0 +1,470 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Liliana Matos</title>
+		<meta name="description" content="Liliana Matos Digital Portfolio" />
+		<meta name="keywords" content="Liliana Matos, DMD, Digital Media Design, Computer Science Engineering, University of Pennsylvania" />
+		<meta name="author" content="Liliana Matos" />
+		<meta name="revised" content="Liliana Matos, 08/26/2012" />
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		
+		<link type="text/css" href="/fonts/quicksand/stylesheet.css" rel="stylesheet"/>
+		<link type="text/css" href="/style.css" rel="stylesheet"/>
+		<link type="text/css" href="/css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet"/>
+		<link type="text/css" href="/prettyPhoto/css/prettyPhoto.css" rel="stylesheet" media="screen" charset="utf-8"/>
+		<script type="text/javascript" src="/js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="/jquery-color/jquery.color.js"></script>
+		<script type="text/javascript" src="/prettyPhoto/js/jquery.prettyPhoto.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/script.js"></script>
+		
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37527404-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+	</head>
+	<body onload="load()">
+		<script type="text/javascript" charset="utf-8">
+		  $(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		  });
+		</script>
+		
+		<div id="wrapper">
+			<div id="container">
+				<div id="content">
+					<div id="home-title" class="title">hi there! <br/>i'm liliana and i'm madly in love with <a class="home-color">grids</a>.</div>
+					<div id="portfolio-title" class="title" style="display:none;">a collection of my most recent <a class="portfolio-color">works</a>.</a></div>
+					<div id="about-title" class="title" style="display:none;">the woman behind the <a class="about-color">code</a>.</div>
+					<div id="contact-title" class="title" style="display:none;">want to know more? let's <a class="contact-color">chat</a>.</div>
+					
+					<div class="side-text" id="home-side-text">
+					I am a Digital Media Design major at the University of Pennsylvania. I love coding, graphic design, typography and grids! Enough said, go on and have a look around!
+					</div>
+					<div class="side-text" id="portfolio-side-text" style="display: none;">
+						<b>Half programmer,</br>half artist.</b>
+						<br/><br/>
+						<a class="portfolio-color" id="art-link" style="cursor: pointer;" onClick="switchPicSet('art')">Art & Design</a>
+						<br/>
+						<a class="fade" id="code-link" onClick="switchPicSet('code')" style="cursor:pointer;">Code</a>
+						<br/>
+					</div>
+					<div class="side-text" id="about-side-text" style="display: none;">
+						like what you see&#8212;
+						<br/>
+						download my <b><a class="sidelink fade" href="/images/resume.pdf" target="blank">resume</a></b>.
+					</div>
+					
+				</div>
+				<div id = "nav">
+					<div id = "icon-home" class = "icon" onClick="transitionPage('home')" style="top: 0px; left: 0px;">
+						
+						<img src = "/images/home.png"/ id="home-img" style="display: none"/>
+						<img src = "/images/home-active.png"/ id="home-active-img" style="cursor: pointer;"/>
+						<a id="home-label" class="home-color icon-label">home</a>
+						
+					</div>
+					<div id = "icon-portfolio" class = "icon fade" onClick="transitionPage('portfolio')" style="top: 38px; left: 0px;">
+					
+						<img src = "/images/portfolio.png" id="portfolio-img"/>
+						<img src = "/images/portfolio-active.png"/ id="portfolio-active-img" style="display: none;"/>
+						<a id="portfolio-label" class="sidelink icon-label">portfolio</a>
+						
+					</div>
+					<div id = "icon-about" class = "icon fade" onClick="transitionPage('about')" style="top: 76px; left: 0px;" >
+					
+						<img src = "/images/about.png" id="about-img"/>
+						<img src = "/images/about-active.png"/ id="about-active-img" style="display: none;"/>
+						<a id="about-label" class="sidelink icon-label">about</a>
+						
+					</div>
+					<div id = "icon-contact" class = "icon fade" onClick="transitionPage('contact')" style="top: 114px; left: 0px;">
+						<img src = "/images/contact.png" id="contact-img"/>
+						<img src = "/images/contact-active.png"/ id="contact-active-img" style="display: none;"/>
+						<a id="contact-label" class="sidelink icon-label">contact</a>
+					</div>
+				</div>
+				<div id="grid">
+					<div id="grid-topleft" class="grid-square" style="top: 0px; left: 0px;">
+					
+						<div id="pixel-1" class="grid-pixel fade" style="top: 0px; left: 0px;"></div>
+						<div id="pixel-2" class="grid-pixel fade" style="top: 0px; left: 50px;"></div>
+						<div id="pixel-3" class="grid-pixel fade" style="top: 0px; left: 100px;"></div>
+						
+						<div id="pixel-4" class="grid-pixel fade" style="top: 50px; left: 0px;"></div>
+						<div id="pixel-5" class="grid-pixel fade" style="top: 50px; left: 50px;"></div>
+						<div id="pixel-6" class="grid-pixel fade" style="top: 50px; left: 100px;"></div>
+						
+						<div id="pixel-7" class="grid-pixel fade" style="top: 100px; left: 0px;"></div>
+						<div id="pixel-8" class="grid-pixel fade" style="top: 100px; left: 50px;"></div>
+						<div id="pixel-9" class="grid-pixel fade" style="top: 100px; left: 100px;"></div>
+						
+						<div id="portfolio-square1" class="grid-textsquare" onClick="openGallery('topleft')" style="background: #00A755; cursor: pointer; z-index: 1; display: none;">
+							<a id = "art-label1">
+								<b>The Dancer Games</b>
+								<br/><br/>
+								<br/>Print, Fall 2012
+							</a>
+							<a id = "code-label1" style="display:none;">
+								<b>eCrafting</b>
+								<br/><br/>
+								HTML, CSS, JS
+								<br/>Site, Fall 2012
+							</a>
+						</div>
+						<div id="art-thumb1" class="grid-square" style="z-index: 0; display: none;">
+							<img src="/images/dancer-games-thumb.jpg"/>
+						</div>
+						<div id="code-thumb1" class="grid-square" style="z-index: 0; display: none">
+							<img src="/images/ecrafting-thumb.jpg"/>
+						</div>
+					</div>
+					<div id="grid-topcen" class="grid-square" style="top: 0px; left: 188px;">
+						<div id="pixel-10" class="grid-pixel fade" style="top: 0px; left: 0px;"></div>
+						<div id="pixel-11" class="grid-pixel fade" style="top: 0px; left: 50px;"></div>
+						<div id="pixel-12" class="grid-pixel fade" style="top: 0px; left: 100px;"></div>
+						
+						<div id="pixel-13" class="grid-pixel fade" style="top: 50px; left: 0px;"></div>
+						<div id="pixel-14" class="grid-pixel fade" style="top: 50px; left: 50px;"></div>
+						<div id="pixel-15" class="grid-pixel fade" style="top: 50px; left: 100px;"></div>
+						
+						<div id="pixel-16" class="grid-pixel fade" style="top: 100px; left: 0px;"></div>
+						<div id="pixel-17" class="grid-pixel fade" style="top: 100px; left: 50px;"></div>
+						<div id="pixel-18" class="grid-pixel fade" style="top: 100px; left: 100px;"></div>
+						
+						<div id="portfolio-square2" class="grid-textsquare" onClick="openGallery('topcen')" style="background: #00A755; cursor: pointer; z-index: 1; display: none;">
+							<a id = "art-label2">
+								<b>Fresher than Freshmen</b>
+								<br/><br/>
+								T-Shirt, Summer 2012
+							</a>
+							<a id = "code-label2" style="display:none;">
+								<b>Vinkl</b>
+								<br/><br/>
+								
+								HTML, CSS, JS
+								<br/>
+								Site, Summer 2012
+								
+							</a>
+						</div>
+						<div id="art-thumb2" class="grid-square" style="z-index: 0; display: none;">
+							<img src="/images/tso-shirt-thumb.jpg"/>
+						</div>
+						<div id="code-thumb2" class="grid-square" style="z-index: 0; display: none">
+							<img src="/images/vinkl-ill-thumb.jpg"/>
+						</div>
+					</div>
+					<div id="grid-topright" class="grid-square" style="top: 0px; left: 376px;">
+					
+						<div id="pixel-19" class="grid-pixel fade" style="top: 0px; left: 0px;"></div>
+						<div id="pixel-20" class="grid-pixel fade" style="top: 0px; left: 50px;"></div>
+						<div id="pixel-21" class="grid-pixel fade" style="top: 0px; left: 100px;"></div>
+						
+						<div id="pixel-22" class="grid-pixel fade" style="top: 50px; left: 0px;"></div>
+						<div id="pixel-23" class="grid-pixel fade" style="top: 50px; left: 50px;"></div>
+						<div id="pixel-24" class="grid-pixel fade" style="top: 50px; left: 100px;"></div>
+						
+						<div id="pixel-25" class="grid-pixel fade" style="top: 100px; left: 0px;"></div>
+						<div id="pixel-26" class="grid-pixel fade" style="top: 100px; left: 50px;"></div>
+						<div id="pixel-27" class="grid-pixel fade" style="top: 100px; left: 100px;"></div>
+						
+						<div id="portfolio-square3" class="grid-textsquare" onClick="openGallery('topright')" style="background: #00A755; cursor: pointer; z-index: 1; display: none;">
+							<a id = "art-label3">
+								<b>Onda Never Dies</b>
+								<br/><br/>
+								
+								<br/>Print, Spring 2012
+							</a>
+							<a id = "code-label3" style="display:none;">
+								<b>Mosquito Catcher</b>
+								<br/><br/>
+								
+								Java
+								<br/>
+								Strategy, Summer 2012
+								
+							</a>
+						</div>
+						<div id="art-thumb3" class="grid-square" style="z-index: 0; display: none;">
+						
+							<img src="/images/onda-never-dies-thumb.jpg"/>
+						</div>
+						<div id="code-thumb3" class="grid-square" style="z-index: 0; display: none">
+							<img src="/images/mosquito-thumb.jpg"/>
+						</div>
+					</div>
+					
+					<div id="grid-cenleft" class="grid-square" style="top: 188px; left: 0px;">
+						<div id="pixel-28" class="grid-pixel fade" style="top: 0px; left: 0px;"></div>
+						<div id="pixel-29" class="grid-pixel fade" style="top: 0px; left: 50px;"></div>
+						<div id="pixel-30" class="grid-pixel fade" style="top: 0px; left: 100px;"></div>
+						
+						<div id="pixel-31" class="grid-pixel fade" style="top: 50px; left: 0px;"></div>
+						<div id="pixel-32" class="grid-pixel fade" style="top: 50px; left: 50px;"></div>
+						<div id="pixel-33" class="grid-pixel fade" style="top: 50px; left: 100px;"></div>
+						
+						<div id="pixel-34" class="grid-pixel fade" style="top: 100px; left: 0px;"></div>
+						<div id="pixel-35" class="grid-pixel fade" style="top: 100px; left: 50px;"></div>
+						<div id="pixel-36" class="grid-pixel fade" style="top: 100px; left: 100px;"></div>
+						
+						<div id="portfolio-square6" class="grid-textsquare" onClick="openGallery('cenleft')" style="background: #00A755; cursor: pointer; z-index: 1; display: none;">
+							<a id = "art-label4">
+								<!--<b>Deconstruction of A Swiss Chocolate Bar Wrapper</b>-->
+								<b>Sansom Street</b>
+								<br/><br/>
+								<br/>Video, Spring 2012
+							</a>
+							<a id = "code-label4" style="display:none;">
+								<b>Red and Blue</b>
+								<br/><br/>
+								
+								HTML, CSS, JS
+								<br/>
+								Blog, Spring 2012
+								
+							</a>
+						</div>
+						<div id="art-thumb4" class="grid-square" style="z-index: 0; display: none;">
+							<img src="/images/sansom-thumb.jpg"/>
+						</div>
+						<div id="code-thumb4" class="grid-square" style="z-index: 0; display: none">
+							<img src="/images/red-blue-thumb.png"/>
+						</div>
+					</div>
+					<div id="grid-cencen" class="grid-square" style="top: 188px; left: 188px;">
+						<div id="pixel-37" class="grid-pixel fade" style="top: 0px; left: 0px;"></div>
+						<div id="pixel-38" class="grid-pixel fade" style="top: 0px; left: 50px;"></div>
+						<div id="pixel-39" class="grid-pixel fade" style="top: 0px; left: 100px;"></div>
+						
+						<div id="pixel-40" class="grid-pixel fade" style="top: 50px; left: 0px;"></div>
+						<div id="pixel-41" class="grid-pixel fade" style="top: 50px; left: 50px;"></div>
+						<div id="pixel-42" class="grid-pixel fade" style="top: 50px; left: 100px;"></div>
+						
+						<div id="pixel-43" class="grid-pixel fade" style="top: 100px; left: 0px;"></div>
+						<div id="pixel-44" class="grid-pixel fade" style="top: 100px; left: 50px;"></div>
+						<div id="pixel-45" class="grid-pixel fade" style="top: 100px; left: 100px;"></div>
+						
+						<div id="portfolio-square5" class="grid-textsquare" onClick="openGallery('cencen')" style="background: #00A755; cursor: pointer; z-index: 1; display: none;">
+							<a id = "art-label5">
+								<b>@HeyDay2012</b>
+								<br/><br/>
+								<br/>T-Shirt, Spring 2012
+							</a>
+							<a id = "code-label5" style="display:none;">
+								<b>Sudoku Solver</b>
+								<br/><br/>
+								
+								Python
+								<br/>
+								Program, Spring 2012
+								
+							</a>
+						</div>
+						<div id="art-thumb5" class="grid-square" style="z-index: 0; display: none;">
+							<img src="/images/hey-day-twitter-thumb.jpg"/>
+						</div>
+						<div id="code-thumb5" class="grid-square" style="z-index: 0; display: none">
+							<img src="/images/sudoku-thumb.png"/>
+						</div>
+					</div>
+					<div id="grid-cenright" class="grid-square" style="top: 188px; left: 376px;">
+						<div id="pixel-46" class="grid-pixel fade" style="top: 0px; left: 0px;"></div>
+						<div id="pixel-47" class="grid-pixel fade" style="top: 0px; left: 50px;"></div>
+						<div id="pixel-48" class="grid-pixel fade" style="top: 0px; left: 100px;"></div>
+						
+						<div id="pixel-49" class="grid-pixel fade" style="top: 50px; left: 0px;"></div>
+						<div id="pixel-50" class="grid-pixel fade" style="top: 50px; left: 50px;"></div>
+						<div id="pixel-51" class="grid-pixel fade" style="top: 50px; left: 100px;"></div>
+						
+						<div id="pixel-52" class="grid-pixel fade" style="top: 100px; left: 0px;"></div>
+						<div id="pixel-53" class="grid-pixel fade" style="top: 100px; left: 50px;"></div>
+						<div id="pixel-54" class="grid-pixel fade" style="top: 100px; left: 100px;"></div>
+						
+						<div id="portfolio-square4" class="grid-textsquare" onClick="openGallery('cenright')" style="background: #00A755; cursor: pointer; z-index: 1; display: none;">
+							<a id = "art-label6">
+								<b>Oh Mami, it's Umami</b>
+								<br/><br/>
+								Print, Fall 2011
+							</a>
+							<a id = "code-label6" style="display:none;">
+								<b>Hamburgefons</b>
+								<br/><br/>
+								
+								HTML, CSS, JS
+								<br/>
+								Site, Fall 2011
+								
+							</a>
+						</div>
+						<div id="art-thumb6" class="grid-square" style="z-index: 0; display: none;">
+							<img src="/images/umami-thumb.jpg"/>
+						</div>
+						<div id="code-thumb6" class="grid-square" style="z-index: 0; display: none">
+							<img src="/images/hamburg-str-thumb.png"/>
+						</div>
+					</div>
+					
+					<div id="grid-botleft" class="grid-square" style="top: 376px; left: 0px;">
+						<div id="pixel-55" class="grid-pixel fade" style="top: 0px; left: 0px;"></div>
+						<div id="pixel-56" class="grid-pixel fade" style="top: 0px; left: 50px;"></div>
+						<div id="pixel-57" class="grid-pixel fade" style="top: 0px; left: 100px;"></div>
+						
+						<div id="pixel-58" class="grid-pixel fade" style="top: 50px; left: 0px;"></div>
+						<div id="pixel-59" class="grid-pixel fade" style="top: 50px; left: 50px;"></div>
+						<div id="pixel-60" class="grid-pixel fade" style="top: 50px; left: 100px;"></div>
+						
+						<div id="pixel-61" class="grid-pixel fade" style="top: 100px; left: 0px;"></div>
+						<div id="pixel-62" class="grid-pixel fade" style="top: 100px; left: 50px;"></div>
+						<div id="pixel-63" class="grid-pixel fade" style="top: 100px; left: 100px;"></div>
+						
+						<div id="portfolio-square7" class="grid-textsquare" onClick="openGallery('botleft')" style="background: #00A755; cursor: pointer; z-index: 1; display: none;">
+							<a id = "art-label7">
+								<b>Embedded Systems</b>
+								<br/><br/>
+								Print, Fall 2011
+							</a>
+							<a id = "code-label7" style="display:none;">
+								<b>Clouds</b>
+								<br/><br/>
+								
+								C++, VS
+								<br/>
+								Graphics, Fall 2011
+								
+							</a>
+						</div>
+						<div id="art-thumb7" class="grid-square" style="z-index: 0; display: none;">
+							<img src="/images/EMBS-thumb.png"/>
+						</div>
+						<div id="code-thumb7" class="grid-square" style="z-index: 0; display: none">
+							<img src="/images/clouds-thumb.jpg"/>
+						</div>
+					</div>
+					<div id="grid-botcen" class="grid-square" style="top: 376px; left: 188px;">
+						<div id="pixel-64" class="grid-pixel fade" style="top: 0px; left: 0px;"></div>
+						<div id="pixel-65" class="grid-pixel fade" style="top: 0px; left: 50px;"></div>
+						<div id="pixel-66" class="grid-pixel fade" style="top: 0px; left: 100px;"></div>
+						
+						<div id="pixel-67" class="grid-pixel fade" style="top: 50px; left: 0px;"></div>
+						<div id="pixel-68" class="grid-pixel fade" style="top: 50px; left: 50px;"></div>
+						<div id="pixel-69" class="grid-pixel fade" style="top: 50px; left: 100px;"></div>
+						
+						<div id="pixel-70" class="grid-pixel fade" style="top: 100px; left: 0px;"></div>
+						<div id="pixel-71" class="grid-pixel fade" style="top: 100px; left: 50px;"></div>
+						<div id="pixel-72" class="grid-pixel fade" style="top: 100px; left: 100px;"></div>
+						
+						<div id="portfolio-square8" class="grid-textsquare" onClick="openGallery('botcen')" style="background: #00A755; cursor: pointer; z-index: 1; display: none;">
+							<a id = "art-label8">
+								<b>Deconstruction</b>
+								<br/><br/>
+								Triptych Print, <br/>Fall 2011
+							</a>
+							<a id = "code-label8" style="display:none;">
+								<b>Ray Tracer</b>
+								<br/><br/>
+								C++, VS, QT, OpenGL
+								<br/>
+								Graphics, Fall 2011
+								
+							</a>
+						</div>
+						<div id="art-thumb8" class="grid-square" style="z-index: 0; display: none;">
+							<img src="/images/swiss-thumb.png"/>
+						</div>
+						<div id="code-thumb8" class="grid-square" style="z-index: 0; display: none">
+							<img src="/images/ray-tracer-thumb.png"/>
+						</div>
+					</div>
+					<div id="grid-botright" class="grid-square" style="top: 376px; left: 376px;">
+						<div id="pixel-73" class="grid-pixel fade" style="top: 0px; left: 0px;"></div>
+						<div id="pixel-74" class="grid-pixel fade" style="top: 0px; left: 50px;"></div>
+						<div id="pixel-75" class="grid-pixel fade" style="top: 0px; left: 100px;"></div>
+						
+						<div id="pixel-76" class="grid-pixel fade" style="top: 50px; left: 0px;"></div>
+						<div id="pixel-77" class="grid-pixel fade" style="top: 50px; left: 50px;"></div>
+						<div id="pixel-78" class="grid-pixel fade" style="top: 50px; left: 100px;"></div>
+						
+						<div id="pixel-79" class="grid-pixel fade" style="top: 100px; left: 0px;"></div>
+						<div id="pixel-80" class="grid-pixel fade" style="top: 100px; left: 50px;"></div>
+						<div id="pixel-81" class="grid-pixel fade" style="top: 100px; left: 100px;"></div>
+						
+						<div id="portfolio-square9" class="grid-textsquare" onClick="openGallery('botright')" style="background: #00A755; cursor: pointer; z-index: 1; display: none;">
+							<a id = "art-label9">
+								<b>Grotesque</b>
+								<br/><br/>
+								11'' x 24'' Pencil, <br/>Fall 2010
+							</a>
+							<a id = "code-label9" style="display:none;">
+								<!--<b>PennSim</b>
+								<br/><br/>
+								C
+								<br/>
+								Program, Fall 2010-->
+							</a>
+						</div>
+						<div id="art-thumb9" class="grid-square" style="z-index: 0; display: none;">
+							<img src="/images/grotesque-thumb.jpg"/>
+						</div>
+						<div id="code-thumb9" class="grid-square" style="z-index: 0; display: none">
+							
+						</div>
+					</div>
+					<div id="about-rect1" class="med-rect fade" style="top: 0px; left: 0px; background: #FFC400; display: none;"></div>
+					<div id="about-rect2" class="side-med-rect fade" style="top: 376px; left: 0px; background: #FFC400; display: none;"></div>
+					<div id="about-rect3" class="grid-square fade" style="top: 376px; left: 376px; background: #FFC400; display: none;"></div>
+					<div id="about-text1" class="about-text"style="height: 338px; top:0px; left:188px; display:none;">
+						I see you want to learn more about <b>moi</b>.
+						<br/><br/>
+						I am a Manhattan-born, Jersey-raised, Dominican gal. Currently, I am a Senior at the University of Pennsylvania studying Digital Media Design&#8212;an interdisciplinary program that combines computer science engineering and fine arts. <br/><br/>I enjoy coding, especially for the web. I find it fascinating how one person (or team) can create a single application, network, or site that millions of people can access and use with a single click.
+					</div>
+					<div id="about-text2" class="about-text" style="height: 376px; top:0px; left:376px; display: none;">
+						Let's talk about the <b>artist</b>.<br/><br/> I am quite the graphic design and typography junkie. I constantly asky myself <b>why</b>. I feel every element should have an intrinsic purpose beyond being aesthetically pleasing. <br/><br/>Aside from coding and designing, I love music! I play the flute and am part of Penn's Latin dance troupe, Onda Latina. <br/><br/>Now that you know more about me, how about you tell me a little bit about yourself? Looking forward to hearing from you!
+					</div>
+					
+					<div id="contact-bar1" class="grid-square fade" style="top: 376px; left:0px; background: #00ACE0; display:none;"></div>
+					<div id="contact-bar2" class="med-rect fade" style="top: 188px; left:188px; background: #00ACE0; display:none;"></div>
+					<div id="contact-bar3" class="lrg-rect fade" style="top: 0px; left:376px; background: #00ACE0; display:none;"></div>
+					
+					<div id="contact-text1" class="grid-textsquare" style="top: 0px; left:0px; font-weight:bold; color: #000000; text-align: right; background: transparent; display:none;">
+						email
+						<br/><br/><br/>
+						tel
+						<br/><br/>
+						address
+					</div>
+					<div id="contact-text2" class="grid-textsquare" style="top: 188px; left:0px; font-weight:bold; color: #000000; text-align: right; background: transparent; display:none;">
+						twitter
+						<br/><br/>
+						facebook
+						<br/><br/>
+						linkedin
+					</div>
+					<div id="contact-text3" class="grid-textsquare" style="top: 0px; left:188px; text-align: left; color: #000000; background: transparent; display:none;"> 
+						matosl (at) seas (dot) upenn (dot) edu
+						<br/><br/>
+						(908) 463-7816
+						<br/><br/>
+						3650 chestnut street MB 102
+						philadelphia, pa, 19104
+					</div>
+					<div id="contact-text4" class="grid-textsquare" style="top: 188px; left:188px; text-align: left; background: transparent; display:none;">					
+						<a class="fade" href="http://twitter.com/lilianammmatos" target="blank">lilianammmatos</a>
+						<br/><br/>
+						<a class="fade" href="http://www.facebook.com/liliana.matos" target="blank">liliana.matos</a>
+						<br/><br/>
+						<a class="fade" href="http://www.linkedin.com/pub/liliana-matos/39/115/863" target="blank">matosl</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
